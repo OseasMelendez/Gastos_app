@@ -15,8 +15,8 @@ const Car = ({ size = 24, color = "currentColor"}) => (
       fill="url(#paint1_linear_103_1486)"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M28.3078 9.84615H3.69238L7.16378 1.51479C7.54598 0.597508 8.44225 0 9.43598 0H22.5641C23.5579 0 24.4541 0.597508 24.8364 1.51479L28.3078 9.84615ZM24.6155 7.38462H7.38469L9.43598 2.46154H22.5641L24.6155 7.38462Z"
       fill="url(#paint2_linear_103_1486)"
     />
@@ -43,12 +43,12 @@ const Car = ({ size = 24, color = "currentColor"}) => (
     <path
       d="M14.7692 12.3077C14.7692 11.6279 14.2181 11.0769 13.5384 11.0769C12.8587 11.0769 12.3076 11.6279 12.3076 12.3077V14.7692C12.3076 15.4489 12.8587 16 13.5384 16C14.2181 16 14.7692 15.4489 14.7692 14.7692V12.3077Z"
       fill="#000000"
-      fill-opacity="0.4"
+      fillOpacity="0.4"
     />
     <path
       d="M19.692 12.3077C19.692 11.6279 19.141 11.0769 18.4612 11.0769C17.7815 11.0769 17.2305 11.6279 17.2305 12.3077V14.7692C17.2305 15.4489 17.7815 16 18.4612 16C19.141 16 19.692 15.4489 19.692 14.7692V12.3077Z"
       fill="#000000"
-      fill-opacity="0.4"
+      fillOpacity="0.4"
     />
     <defs>
       <linearGradient
@@ -59,8 +59,8 @@ const Car = ({ size = 24, color = "currentColor"}) => (
         y2="22.1538"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3873E5" />
-        <stop offset="1" stop-color="#2A5CDD" />
+        <stop stopColor="#3873E5" />
+        <stop offset="1" stopColor="#2A5CDD" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_103_1486"
@@ -70,8 +70,8 @@ const Car = ({ size = 24, color = "currentColor"}) => (
         y2="22.1539"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3873E5" />
-        <stop offset="1" stop-color="#2A5CDD" />
+        <stop stopColor="#3873E5" />
+        <stop offset="1" stopColor="#2A5CDD" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_103_1486"
@@ -81,8 +81,8 @@ const Car = ({ size = 24, color = "currentColor"}) => (
         y2="9.84615"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#57A6F5" />
-        <stop offset="1" stop-color="#3C79E7" />
+        <stop stopColor="#57A6F5" />
+        <stop offset="1" stopColor="#3C79E7" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_103_1486"
@@ -92,8 +92,8 @@ const Car = ({ size = 24, color = "currentColor"}) => (
         y2="9.84612"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#58A8F6" />
-        <stop offset="1" stop-color="#3B78E7" />
+        <stop stopColor="#58A8F6" />
+        <stop offset="1" stopColor="#3B78E7" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_103_1486"
@@ -103,8 +103,8 @@ const Car = ({ size = 24, color = "currentColor"}) => (
         y2="9.84624"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#58A8F6" />
-        <stop offset="1" stop-color="#3B78E7" />
+        <stop stopColor="#58A8F6" />
+        <stop offset="1" stopColor="#3B78E7" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_103_1486"
@@ -114,8 +114,8 @@ const Car = ({ size = 24, color = "currentColor"}) => (
         y2="19.6923"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#58A8F6" />
-        <stop offset="1" stop-color="#3B78E7" />
+        <stop stopColor="#58A8F6" />
+        <stop offset="1" stopColor="#3B78E7" />
       </linearGradient>
     </defs>
   </svg>

@@ -1,0 +1,37 @@
+/* Estilos para la tarjeta de total de gastos */
+
+.total-expenses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.total-content {
+  flex: 1;
+}
+
+.total-label {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  letter-spacing: 0.5px;
+}
+
+.total-amount {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.total-icon {
+  font-size: 32px;
+  opacity: 0.8;
+}
+

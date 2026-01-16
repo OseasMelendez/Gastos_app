@@ -5,7 +5,7 @@ const Shopping = ({ size = 24, color = "currentColor"}) => (
     height={size}
     fill={color}
     viewBox="0 0 1024 1024"
-    class="icon"
+    className="icon"
     version="1.1"
   >
     <path

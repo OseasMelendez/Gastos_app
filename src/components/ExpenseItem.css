@@ -1,0 +1,56 @@
+/* Estilos para un gasto individual en el historial */
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.expense-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del ícono */
+.expense-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  flex-shrink: 0; /* Evita que se comprima */
+}
+
+/* Información del gasto (nombre y detalles) */
+.expense-info {
+  flex: 1; /* Toma todo el espacio disponible */
+  min-width: 0; /* Permite que el texto se trunque si es necesario */
+}
+
+.expense-description {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.expense-details {
+  margin: 0;
+  font-size: 12px;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Monto del gasto */
+.expense-amount {
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0; /* Evita que se comprima */
+}

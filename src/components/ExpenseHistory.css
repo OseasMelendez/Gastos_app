@@ -1,0 +1,58 @@
+/* Estilos para el historial de gastos */
+
+.expense-history {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado con título e ícono */
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.history-icon {
+  font-size: 20px;
+}
+
+.history-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+/* Lista de gastos */
+.history-list {
+  margin-bottom: 16px;
+}
+
+/* Mensaje cuando no hay gastos */
+.empty-message {
+  text-align: center;
+  color: #9CA3AF;
+  padding: 32px;
+  font-size: 14px;
+}
+
+/* Botón "View All Transactions" */
+.view-all-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: none;
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.view-all-btn:hover {
+  background-color: #F3F4F6;
+}

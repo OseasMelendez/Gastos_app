@@ -1,0 +1,174 @@
+/* Estilos para el formulario de gastos */
+
+.expense-form-container {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+/* Encabezado del formulario */
+.form-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form-title {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.form-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #6B7280;
+}
+
+/* Formulario */
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Campo de formulario */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1; /* Para que los campos en fila sean iguales */
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  letter-spacing: 0.5px;
+}
+
+/* Fila de campos (categoría y descripción) */
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+/* Campo de monto */
+.amount-input-wrapper {
+  position: relative;
+  background-color: #D1FAE5; /* Verde menta claro */
+  border-radius: 12px;
+  padding: 16px 16px 16px 48px; /* Espacio para el símbolo $ */
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: 600;
+  color: #065F46;
+}
+
+.amount-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #065F46;
+}
+
+.amount-input::placeholder {
+  color: #059669;
+  opacity: 0.5;
+}
+
+/* Ocultar flechas en input number */
+.amount-input::-webkit-outer-spin-button,
+.amount-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.amount-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Campo de categoría (select) */
+.select-wrapper {
+  position: relative;
+}
+
+.category-select {
+  width: 100%;
+  padding: 14px 40px 14px 16px;
+  background-color: #F3F4F6;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #6B7280;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+}
+
+.category-select:focus {
+  background-color: #E5E7EB;
+}
+
+.select-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 16px;
+}
+
+/* Campo de descripción */
+.description-input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #F3F4F6;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #1F2937;
+  outline: none;
+}
+
+.description-input::placeholder {
+  color: #9CA3AF;
+}
+
+.description-input:focus {
+  background-color: #E5E7EB;
+}
+
+/* Botón de guardar */
+.save-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #FB923C; /* Naranja */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 8px;
+}
+
+.save-btn:hover {
+  background-color: #F97316;
+}
+
+.save-btn:active {
+  transform: scale(0.98);
+}
