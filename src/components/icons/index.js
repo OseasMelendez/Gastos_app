@@ -6,3 +6,6 @@ export { default as Utensils } from './Utensils';
 export { default as MovieTicket } from './MovieTicket';
 export { default as Car } from './Car';
 export { default as Hospital } from './Hospital';
+export { default as MoneyBag } from './MoneyBag';
+export { default as HistoryBoard } from './HistoryBoard';
+export { default as Save } from './Save';

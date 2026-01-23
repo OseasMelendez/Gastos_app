@@ -4,6 +4,7 @@
 import { useState } from 'react';
 import './ExpenseHistory.css';
 import ExpenseItem from './ExpenseItem';
+import { HistoryBoard } from './icons';
 
 function ExpenseHistory({ expenses }) {
   // Estado para controlar si mostrar todos los gastos o solo 5
@@ -24,7 +25,7 @@ function ExpenseHistory({ expenses }) {
     <div className="expense-history">
       {/* Título con ícono */}
       <div className="history-header">
-        <span className="history-icon">📋</span>
+        <span className="history-icon"><HistoryBoard size={24} /></span>
         <h2 className="history-title">Expense History</h2>
       </div>
 

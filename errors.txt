@@ -1,0 +1,47 @@
+In HTML, <span> cannot be a child of <option>.
+This will cause a hydration error.
+
+  <App>
+    <div className="app">
+      <div className="container">
+        <ExpenseForm onAddExpense={function t1}>
+          <div className="expense-fo...">
+            <div>
+            <form onSubmit={function t1} className="expense-form">
+              <div>
+              <div className="form-row">
+                <div className="form-field">
+                  <label>
+                  <div className="select-wra...">
+                    <select value="" onChange={function t8} className="category-s...">
+                      <option>
+>                     <option value="groceries">
+>                       <span>
+                        ...
+                      ...
+                    ...
+                ...
+              ...
+        ...
+
+overrideMethod @ installHook.js:1Understand this error
+installHook.js:1 Invalid DOM property `class`. Did you mean `className`?
+overrideMethod @ installHook.js:1Understand this error
+react-dom_client.js?v=87c47a1f:2232 Uncaught Error: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX.
+    at setValueForStyles (react-dom_client.js?v=87c47a1f:2232:17)
+    at setProp (react-dom_client.js?v=87c47a1f:14193:13)
+    at setInitialProperties (react-dom_client.js?v=87c47a1f:14782:98)
+    at completeWork (react-dom_client.js?v=87c47a1f:9075:28)
+    at runWithFiberInDEV (react-dom_client.js?v=87c47a1f:995:72)
+    at completeUnitOfWork (react-dom_client.js?v=87c47a1f:12667:22)
+    at performUnitOfWork (react-dom_client.js?v=87c47a1f:12573:29)
+    at workLoopSync (react-dom_client.js?v=87c47a1f:12422:43)
+    at renderRootSync (react-dom_client.js?v=87c47a1f:12406:13)
+    at performWorkOnRoot (react-dom_client.js?v=87c47a1f:11825:37)Understand this error
+installHook.js:1 An error occurred in the <path> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+overrideMethod @ installHook.js:1Understand this warning
+3client:810 [vite] hot updated: /src/components/TotalExpenses.css

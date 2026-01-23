@@ -1,15 +1,16 @@
 // Componente del formulario para agregar nuevos gastos
 // Props: onAddExpense (función que se ejecuta al guardar)
 
-import { useState } from 'react';
-import './ExpenseForm.css';
-import { CATEGORIES } from '../constants/categories';
+import { useState } from "react";
+import "./ExpenseForm.css";
+import { CATEGORIES } from "../constants/categories";
+import { Save } from "./icons";
 
 function ExpenseForm({ onAddExpense }) {
   // Estado para cada campo del formulario
-  const [amount, setAmount] = useState('');
-  const [categoryId, setCategoryId] = useState('');
-  const [description, setDescription] = useState('');
+  const [amount, setAmount] = useState("");
+  const [categoryId, setCategoryId] = useState("");
+  const [description, setDescription] = useState("");
 
   // Función que se ejecuta al enviar el formulario
   const handleSubmit = (e) => {
@@ -17,7 +18,7 @@ function ExpenseForm({ onAddExpense }) {
 
     // Validación: verificar que todos los campos estén llenos
     if (!amount || !categoryId || !description) {
-      alert('Please fill all fields');
+      alert("Please fill all fields");
       return;
     }
 
@@ -25,22 +26,22 @@ function ExpenseForm({ onAddExpense }) {
     const newExpense = {
       id: Date.now(), // ID único basado en timestamp
       amount: parseFloat(amount), // Convertir string a número
-      category: CATEGORIES.find(cat => cat.id === categoryId), // Buscar categoría completa
+      category: CATEGORIES.find((cat) => cat.id === categoryId), // Buscar categoría completa
       description: description.trim(), // Eliminar espacios al inicio/final
-      date: new Date().toLocaleDateString('en-US', {
-        month: 'short',
-        day: '2-digit',
-        year: 'numeric'
-      })
+      date: new Date().toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+        year: "numeric",
+      }),
     };
 
     // Llamar a la función que nos pasaron como prop
     onAddExpense(newExpense);
 
     // Limpiar el formulario
-    setAmount('');
-    setCategoryId('');
-    setDescription('');
+    setAmount("");
+    setCategoryId("");
+    setDescription("");
   };
 
   return (
@@ -105,7 +106,8 @@ function ExpenseForm({ onAddExpense }) {
 
         {/* Botón de guardar */}
         <button type="submit" className="save-btn">
-          💾 Save Expense
+          <Save size={18}/>
+          <span>Save Expense</span>
         </button>
       </form>
     </div>
